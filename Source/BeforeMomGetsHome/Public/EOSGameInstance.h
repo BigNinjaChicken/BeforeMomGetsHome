@@ -18,4 +18,12 @@ public:
 	UEOSGameInstance();
 
 	virtual void Init() override;
+
+	UFUNCTION(BlueprintCallable)
+	void CreateSession();
+
+	void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
+
+protected:
+	class IOnlineSubsystem* OnlineSubsystem;
 };
