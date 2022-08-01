@@ -3,6 +3,8 @@
 
 #include "EOSGameInstance.h"
 
+#include "Interfaces/OnlineSessionInterface.h"
+#include "OnlineSubsystem.h"
 
 UEOSGameInstance::UEOSGameInstance()
 {
